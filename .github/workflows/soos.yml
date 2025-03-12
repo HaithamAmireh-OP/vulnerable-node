@@ -7,7 +7,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: Run SOOS Scan
-      uses: soos-io/soos-sca-github-action@v2
+      uses: soos-io/soos-sca-github-action@b29ff81e26bb6e373de1a99233aa74dba12b324c # v2
       with:
         client_id: ${{ secrets.SOOS_CLIENT_ID }}
         api_key: ${{ secrets.SOOS_API_KEY }}
@@ -17,7 +17,7 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Run SOOS SAST Scan
-        uses: soos-io/soos-sast-github-action@v1
+        uses: soos-io/soos-sast-github-action@65348f6ff6a3d71239696906796e0c1629293783 # v1
         with:
           client_id: ${{ secrets.SOOS_CLIENT_ID }}
           api_key: ${{ secrets.SOOS_API_KEY }}
